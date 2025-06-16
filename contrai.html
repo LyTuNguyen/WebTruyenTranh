@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruyệnVui - Thế Giới Truyện Tranh Dành Cho Con Gái</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./contrai.css">
+</head>
+<body>
+    <div class="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+        <!-- Header -->
+        <header class="bg-gradient-to-r from-blue-600 to-pink-500 text-white shadow-lg sticky top-0 z-50">
+            <div class="container mx-auto px-4 py-3">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="flex items-center space-x-3 mb-3 md:mb-0">
+                        <div class="bg-white p-2 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                        </div>
+                        <h1 class="text-2xl font-extrabold">TruyệnVui</h1>
+                    </div>
+                    
+                    <div class="hidden md:flex space-x-6 font-medium">
+                        <a href="http://127.0.0.1:5500/index.html" class="hover:text-pink-200 transition border-b-2 border-pink-400 pb-1">Trang Chủ</a>
+                        <a href="#" class="hover:text-pink-200 transition">Truyện hot</a>
+                        <a href="#" class="hover:text-pink-200 transition">Con trai</a>
+                        <a href="#" class="hover:text-pink-200 transition">Con gái</a>
+                        <a href="#" class="hover:text-pink-200 transition">Thể loại</a>
+                    </div>
+                    
+                    <div class="relative w-full md:w-64 mt-3 md:mt-0">
+                        <input type="text" placeholder="Tìm truyện..." class="w-full px-4 py-2 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                        <button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="container mx-auto px-4 py-6">
+            <div class="flex flex-col lg:flex-row gap-6">
+                <!-- Center Content - Manga Collections -->
+                <div class="lg:w-3/4">
+                    <!-- Banner -->
+                    <div class="relative rounded-xl overflow-hidden shadow-lg h-60 bg-gradient-to-r from-blue-500 to-pink-500 mb-6">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center text-white p-6 max-w-lg">
+                                <h2 class="text-3xl font-bold mb-2">Thế Giới Truyện Tranh Con Trai</h2>
+                                <p class="mb-4">Khám phá những bộ truyện tranh dành riêng cho bạn</p>
+                                <button class="bg-white text-pink-600 font-bold py-2 px-6 rounded-full hover:bg-pink-100 transition hover-scale">
+                                    Khám Phá Ngay
+                                </button>
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-10 -right-10 opacity-20">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="white" viewBox="0 0 24 24">
+                                <!--Mã SVG-được sử dụng để vẽ hình ảnh vector trên web-->
+                                <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <!-- Hot Manga Section -->
+                    <div class="bg-white rounded-xl shadow-md p-5 mb-6">
+                        <h2 class="text-xl font-bold text-blue-800 mb-4 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                            </svg>
+                            Truyện Hot Nhất
+                        </h2>
+                        
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+                            <div class="manga-card relative rounded-lg overflow-hidden shadow-md pulse" onclick="showMangaDetails('manga1')">
+                                <div class="badge badge-hot">HOT</div>
+                                <div class="h-48 bg-pink-100 shine-effect">
+                                    <img src="./img/one-piece.jpg" alt="">
+                                </div>
+                                <div class="p-3 bg-gradient-to-r from-blue-500 to-pink-500 text-white">
+                                    <h3 class="font-bold">One Piece</h3>
+                                    <div class="flex justify-between text-xs mt-1">
+                                        <span class="chapter-tag bg-white">Chap 136</span>
+                                        <span class="rating">
+                                            <span class="rating-star mr-1">★</span>4.9
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="manga-card relative rounded-lg overflow-hidden shadow-md" onclick="showMangaDetails('manga2')">
+                                <div class="badge badge-new">MỚI</div>
+                                <div class="h-48 bg-pink-100 shine-effect">
+                                    <img src="./img/Naruto_Volume_1_manga_cover.jpg" alt="">
+                                </div>
+                                <div class="p-3 bg-gradient-to-r from-blue-500 to-pink-500 text-white">
+                                    <h3 class="font-bold">Naruto</h3>
+                                    <div class="flex justify-between text-xs mt-1">
+                                        <span class="chapter-tag bg-white">Chap 53</span>
+                                        <span class="rating">
+                                            <span class="rating-star mr-1">★</span>4.7
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="manga-card relative rounded-lg overflow-hidden shadow-md" onclick="showMangaDetails('manga3')">
+                                <div class="badge badge-update">CẬP NHẬT</div>
+                                <div class="h-48 bg-pink-100 shine-effect">
+                                    <img src="./img/quy-tien-hoa.jpg" alt="">
+                                </div>
+                                <div class="p-3 bg-gradient-to-r from-blue-500 to-pink-500 text-white">
+                                    <h3 class="font-bold">Quỷ Tiến Hóa</h3>
+                                    <div class="flex justify-between text-xs mt-1">
+                                        <span class="chapter-tag bg-white">Hoàn thành</span>
+                                        <span class="rating">
+                                            <span class="rating-star mr-1">★</span>4.8
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="manga-card relative rounded-lg overflow-hidden shadow-md" onclick="showMangaDetails('manga4')">
+                                <div class="h-48 bg-pink-100 shine-effect">
+                                    <img src="./img/images (8).jpg" alt="">
+                                </div>
+                                <div class="p-3 bg-gradient-to-r from-blue-500 to-pink-500 text-white">
+                                    <h3 class="font-bold">Võ Luyện Đỉnh Phong</h3>
+                                    <div class="flex justify-between text-xs mt-1">
+                                        <span class="chapter-tag bg-white">Hoàn thành</span>
+                                        <span class="rating">
+                                            <span class="rating-star mr-1">★</span>4.9
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Popular Manga Section -->
+                    <div class="bg-white rounded-xl shadow-md p-5 mb-6">
+                        <h2 class="text-xl font-bold text-blue-800 mb-4 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                            </svg>
+                            Truyện Shoujo Nổi Bật
+                        </h2>
+                        
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+                            <div class="manga-card relative rounded-lg overflow-hidden shadow-md" onclick="showMangaDetails('manga5')">
+                                <div class="h-48 bg-pink-100 shine-effect">
+                                    <img src="./img/attack on titan.jpg" alt="">
+                                </div>
+                                <div class="p-3 bg-gradient-to-r from-blue-500 to-pink-500 text-white">
+                                    <h3 class="font-bold">Attack on Titan</h3>
+                                    <div class="flex justify-between text-xs mt-1">
+                                        <span class="chapter-tag bg-white">Chap 84</span>
+                                        <span class="rating">
+                                            <span class="rating-star mr-1">★</span>4.8
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="manga-card relative rounded-lg overflow-hidden shadow-md" onclick="showMangaDetails('manga6')">
+                                <div class="h-48 bg-pink-100 shine-effect">
+                                    <img src="./img/black clover.jpg" alt="">
+                                </div>
+                                <div class="p-3 bg-gradient-to-r from-blue-500 to-pink-500 text-white">
+                                    <h3 class="font-bold">Black Clover</h3>
+                                    <div class="flex justify-between text-xs mt-1">
+                                        <span class="chapter-tag bg-white">Chap 312</span>
+                                        <span class="rating">
+                                            <span class="rating-star mr-1">★</span>4.7
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="manga-card relative rounded-lg overflow-hidden shadow-md" onclick="showMangaDetails('manga7')">
+                                <div class="h-48 bg-pink-100 shine-effect">
+                                    <img src="./img/haikyu.jpg" alt="">
+                                </div>
+                                <div class="p-3 bg-gradient-to-r from-blue-500 to-pink-500 text-white">
+                                    <h3 class="font-bold">Haikyu</h3>
+                                    <div class="flex justify-between text-xs mt-1">
+                                        <span class="chapter-tag bg-white">Chap 85</span>
+                                        <span class="rating">
+                                            <span class="rating-star mr-1">★</span>4.6
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="manga-card relative rounded-lg overflow-hidden shadow-md" onclick="showMangaDetails('manga8')">
+                                <div class="h-48 bg-pink-100 shine-effect">
+                                    <img src="./img/Dragon_Ball_Super_artwork.jpg" alt="">
+                                </div>
+                                <div class="p-3 bg-gradient-to-r from-blue-500 to-pink-500 text-white">
+                                    <h3 class="font-bold">Dragon Ball</h3>
+                                    <div class="flex justify-between text-xs mt-1">
+                                        <span class="chapter-tag bg-white">Chap 122</span>
+                                        <span class="rating">
+                                            <span class="rating-star mr-1">★</span>4.5
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-5 flex justify-center">
+                            <button class="bg-pink-500 hover:bg-pink-600 text-white font-medium py-2 px-6 rounded-full transition-all transform hover:scale-105 shadow-md flex items-center">
+                                <span>Xem thêm</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Recently Updated -->
+                    <div class="bg-white rounded-xl shadow-md p-5 mb-6">
+                        <h2 class="text-xl font-bold text-blue-800 mb-4 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            Mới Cập Nhật
+                        </h2>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="manga-card bg-blue-50 rounded-lg p-3 flex items-center space-x-4" onclick="showMangaDetails('manga9')">
+                                <div class="w-16 h-20 bg-pink-100 rounded overflow-hidden shine-effect flex-shrink-0">
+                                    <img src="./img/Death_Note_Characters.jpg" alt="">
+                                </div>
+                                <div class="flex-grow">
+                                    <div class="flex justify-between items-center">
+                                        <h3 class="font-bold text-blue-800">Death Note</h3>
+                                        <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">5 phút trước</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mt-1">Chapter 85</p>
+                                    <div class="flex items-center mt-1 text-xs text-gray-500">
+                                        <span class="flex items-center mr-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                            </svg>
+                                            1.2K
+                                        </span>
+                                        <span class="flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                            </svg>
+                                            4.6
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="manga-card bg-blue-50 rounded-lg p-3 flex items-center space-x-4" onclick="showMangaDetails('manga10')">
+                                <div class="w-16 h-20 bg-pink-100 rounded overflow-hidden shine-effect flex-shrink-0">
+                                    <img src="./img/dr stone.jpg" alt="">
+                                </div>
+                                <div class="flex-grow">
+                                    <div class="flex justify-between items-center">
+                                        <h3 class="font-bold text-blue-800">Dr Stone</h3>
+                                        <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">30 phút trước</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mt-1">Chapter 122</p>
+                                    <div class="flex items-center mt-1 text-xs text-gray-500">
+                                        <span class="flex items-center mr-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                            </svg>
+                                            987
+                                        </span>
+                                        <span class="flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                            </svg>
+                                            4.5
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="manga-card bg-blue-50 rounded-lg p-3 flex items-center space-x-4" onclick="showMangaDetails('manga11')">
+                                <div class="w-16 h-20 bg-pink-100 rounded overflow-hidden shine-effect flex-shrink-0">
+                                    <img src="./img/one-piece.jpg" alt="">
+                                </div>
+                                <div class="flex-grow">
+                                    <div class="flex justify-between items-center">
+                                        <h3 class="font-bold text-blue-800">One piece</h3>
+                                        <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">2 giờ trước</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mt-1">Chapter 243</p>
+                                    <div class="flex items-center mt-1 text-xs text-gray-500">
+                                        <span class="flex items-center mr-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                            </svg>
+                                            856
+                                        </span>
+                                        <span class="flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                            </svg>
+                                            4.7
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="manga-card bg-blue-50 rounded-lg p-3 flex items-center space-x-4" onclick="showMangaDetails('manga12')">
+                                <div class="w-16 h-20 bg-pink-100 rounded overflow-hidden shine-effect flex-shrink-0">
+                                    <img src="./img/images (2).jpg" alt="">
+                                </div>
+                                <div class="flex-grow">
+                                    <div class="flex justify-between items-center">
+                                        <h3 class="font-bold text-blue-800">Jujutsu kaisen</h3>
+                                        <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">3 giờ trước</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mt-1">Chapter 136</p>
+                                    <div class="flex items-center mt-1 text-xs text-gray-500">
+                                        <span class="flex items-center mr-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                            </svg>
+                                            1.5K
+                                        </span>
+                                        <span class="flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                            </svg>
+                                            4.9
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-5 flex justify-center">
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-6 rounded-full transition-all transform hover:scale-105 shadow-md flex items-center">
+                                <span>Xem tất cả</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Categories Section -->
+                    <div class="bg-white rounded-xl shadow-md p-5">
+                        <h2 class="text-xl font-bold text-blue-800 mb-4 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                            </svg>
+                            Thể Loại Truyện
+                        </h2>
+                        
+                        <div class="flex flex-wrap gap-3">
+                            <span class="genre-tag bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm">Tình Cảm</span>
+                            <span class="genre-tag bg-pink-100 text-pink-800 px-4 py-2 rounded-full text-sm">Học Đường</span>
+                            <span class="genre-tag bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm">Lãng Mạn</span>
+                            <span class="genre-tag bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-sm">Hài Hước</span>
+                            <span class="genre-tag bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm">Drama</span>
+                            <span class="genre-tag bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm">Shoujo</span>
+                            <span class="genre-tag bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm">Fantasy</span>
+                            <span class="genre-tag bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm">Slice of Life</span>
+                            <span class="genre-tag bg-pink-100 text-pink-800 px-4 py-2 rounded-full text-sm">Comedy</span>
+                            <span class="genre-tag bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm">Adventure</span>
+                            <span class="genre-tag bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-sm">Supernatural</span>
+                            <span class="genre-tag bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm">Mystery</span>
+                            <span class="genre-tag bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm">Historical</span>
+                            <span class="genre-tag bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm">Psychological</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar - Popular Manga -->
+                <div class="lg:w-1/4">
+                    <div class="bg-white rounded-xl shadow-md p-4 mb-6">
+                        <h2 class="text-xl font-bold text-blue-800 mb-4 border-b-2 border-blue-200 pb-2 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                            Top Yêu Thích
+                        </h2>
+                        
+                        <div class="space-y-3">
+                            <div class="manga-card bg-gradient-to-r from-blue-50 to-pink-50 rounded-lg p-3 hover-scale" onclick="showMangaDetails('manga1')">
+                                <div class="flex items-center mb-2">
+                                    <div class="w-8 h-8 bg-pink-500 text-white rounded-full flex items-center justify-center font-bold mr-3">1</div>
+                                    <h3 class="font-medium text-blue-800">One piece</h3>
+                                </div>
+                                <div class="flex justify-between text-sm text-gray-600">
+                                    <span class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                        </svg>
+                                        4.9
+                                    </span>
+                                    <span>5.2M lượt đọc</span>
+                                </div>
+                            </div>
+                            
+                            <div class="manga-card bg-gradient-to-r from-blue-50 to-pink-50 rounded-lg p-3 hover-scale" onclick="showMangaDetails('manga4')">
+                                <div class="flex items-center mb-2">
+                                    <div class="w-8 h-8 bg-pink-400 text-white rounded-full flex items-center justify-center font-bold mr-3">2</div>
+                                    <h3 class="font-medium text-blue-800">Kimetsu no Yaiba</h3>
+                                </div>
+                                <div class="flex justify-between text-sm text-gray-600">
+                                    <span class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                        </svg>
+                                        4.8
+                                    </span>
+                                    <span>4.8M lượt đọc</span>
+                                </div>
+                            </div>
+                            
+                            <div class="manga-card bg-gradient-to-r from-blue-50 to-pink-50 rounded-lg p-3 hover-scale" onclick="showMangaDetails('manga3')">
+                                <div class="flex items-center mb-2">
+                                    <div class="w-8 h-8 bg-pink-300 text-white rounded-full flex items-center justify-center font-bold mr-3">3</div>
+                                    <h3 class="font-medium text-blue-800">Naruto</h3>
+                                </div>
+                                <div class="flex justify-between text-sm text-gray-600">
+                                    <span class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                        </svg>
+                                        4.7
+                                    </span>
+                                    <span>4.5M lượt đọc</span>
+                                </div>
+                            </div>
+                            
+                            <div class="manga-card bg-gradient-to-r from-blue-50 to-pink-50 rounded-lg p-3 hover-scale" onclick="showMangaDetails('manga2')">
+                                <div class="flex items-center mb-2">
+                                    <div class="w-8 h-8 bg-blue-400 text-white rounded-full flex items-center justify-center font-bold mr-3">4</div>
+                                    <h3 class="font-medium text-blue-800">Dragon Ball</h3>
+                                </div>
+                                <div class="flex justify-between text-sm text-gray-600">
+                                    <span class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                        </svg>
+                                        4.6
+                                    </span>
+                                    <span>4.2M lượt đọc</span>
+                                </div>
+                            </div>
+                            
+                            <div class="manga-card bg-gradient-to-r from-blue-50 to-pink-50 rounded-lg p-3 hover-scale" onclick="showMangaDetails('manga5')">
+                                <div class="flex items-center mb-2">
+                                    <div class="w-8 h-8 bg-blue-300 text-white rounded-full flex items-center justify-center font-bold mr-3">5</div>
+                                    <h3 class="font-medium text-blue-800">Jujutsu Kaisen</h3>
+                                </div>
+                                <div class="flex justify-between text-sm text-gray-600">
+                                    <span class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                        </svg>
+                                        4.5
+                                    </span>
+                                    <span>3.9M lượt đọc</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 text-center">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Xem thêm top yêu thích</a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-md p-4 mb-6">
+                        <h2 class="text-xl font-bold text-blue-800 mb-4 border-b-2 border-blue-200 pb-2 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            Đề Xuất Cho Bạn
+                        </h2>
+                        
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3 bg-blue-50 p-2 rounded-lg hover:bg-blue-100 transition" onclick="showMangaDetails('manga7')">
+                                <div class="w-12 h-16 bg-pink-100 rounded overflow-hidden flex-shrink-0 shine-effect">
+                                    <img src="./img/black clover.jpg" alt="">
+                                </div>
+                                <div class="text-sm">
+                                    <p class="font-medium text-blue-800">Black Clover</p>
+                                    <div class="flex items-center text-xs text-yellow-500">
+                                        <span>★★★★</span><span class="text-gray-400">★</span>
+                                        <span class="text-gray-500 ml-1">(4.6)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-3 bg-blue-50 p-2 rounded-lg hover:bg-blue-100 transition" onclick="showMangaDetails('manga8')">
+                                <div class="w-12 h-16 bg-pink-100 rounded overflow-hidden flex-shrink-0 shine-effect">
+                                    <img src="./img/Dragon_Ball_Super_artwork.jpg" alt="">
+                                </div>
+                                <div class="text-sm">
+                                    <p class="font-medium text-blue-800">Dragon Ball</p>
+                                    <div class="flex items-center text-xs text-yellow-500">
+                                        <span>★★★★</span><span class="text-gray-400">★</span>
+                                        <span class="text-gray-500 ml-1">(4.5)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-3 bg-blue-50 p-2 rounded-lg hover:bg-blue-100 transition" onclick="showMangaDetails('manga11')">
+                                <div class="w-12 h-16 bg-pink-100 rounded overflow-hidden flex-shrink-0 shine-effect">
+                                    <img src="./img/Death_Note_Characters.jpg" alt="">
+                                </div>
+                                <div class="text-sm">
+                                    <p class="font-medium text-blue-800">Death Note</p>
+                                    <div class="flex items-center text-xs text-yellow-500">
+                                        <span>★★★★</span><span class="text-gray-400">★</span>
+                                        <span class="text-gray-500 ml-1">(4.7)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-blue-500 to-pink-500 rounded-xl shadow-md p-4 text-white relative overflow-hidden">
+                        <div class="relative z-10">
+                            <h3 class="font-bold text-xl mb-2">Tham gia cộng đồng!</h3>
+                            <p class="text-sm mb-4">Chia sẻ sở thích, thảo luận về truyện yêu thích cùng hàng ngàn fan khác.</p>
+                            <button class="bg-white text-pink-600 hover:bg-pink-100 transition font-bold py-2 px-4 rounded-lg w-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                                </svg>
+                                Tham gia ngay
+                            </button>
+                        </div>
+                    </div>    
+</body>
+</html>
+                
